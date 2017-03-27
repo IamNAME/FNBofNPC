@@ -1,9 +1,0 @@
-c:\users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\bin\Debug\FNBOfNPC.exe.config
-C:\Users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\obj\Debug\FNBOfNPC.csprojResolveAssemblyReference.cache
-C:\Users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\obj\Debug\FNBOfNPC.Form1.resources
-C:\Users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\obj\Debug\FNBOfNPC.Properties.Resources.resources
-C:\Users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\obj\Debug\FNBOfNPC.csproj.GenerateResource.Cache
-C:\Users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\bin\Debug\FNBOfNPC.exe
-C:\Users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\bin\Debug\FNBOfNPC.pdb
-C:\Users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\obj\Debug\FNBOfNPC.exe
-C:\Users\student\documents\visual studio 2015\Projects\FNBOfNPC\FNBOfNPC\obj\Debug\FNBOfNPC.pdb
