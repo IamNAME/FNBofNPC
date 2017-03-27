@@ -1,1 +1,12 @@
 C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\bin\Debug\FNBofNPC.exe.config
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\bin\Debug\FNBofNPC.exe
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\bin\Debug\FNBofNPC.pdb
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.csprojResolveAssemblyReference.cache
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.AppDataTester.resources
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.Customer.resources
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.MainForm.resources
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.NewCustomer.resources
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.Properties.Resources.resources
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.exe
+C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.pdb
