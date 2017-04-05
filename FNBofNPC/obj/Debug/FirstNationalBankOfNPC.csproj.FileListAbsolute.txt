@@ -1,0 +1,9 @@
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\bin\Debug\FirstNationalBankOfNPC.exe.config
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\bin\Debug\FirstNationalBankOfNPC.exe
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\bin\Debug\FirstNationalBankOfNPC.pdb
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.csprojResolveAssemblyReference.cache
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.Properties.Resources.resources
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.csproj.GenerateResource.Cache
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.exe
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.pdb
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FNBofNPC.Form1.resources

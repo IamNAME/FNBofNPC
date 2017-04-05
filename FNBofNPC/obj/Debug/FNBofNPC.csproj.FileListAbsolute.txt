@@ -1,12 +1,15 @@
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\bin\Debug\FNBofNPC.exe.config
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\bin\Debug\FNBofNPC.exe
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\bin\Debug\FNBofNPC.pdb
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.csprojResolveAssemblyReference.cache
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.AppDataTester.resources
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.Customer.resources
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.MainForm.resources
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.NewCustomer.resources
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.Properties.Resources.resources
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.exe
-C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.pdb
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\bin\Debug\FirstNationalBankOfNPC.exe.config
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.exe
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.pdb
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\bin\Debug\FirstNationalBankOfNPC.exe
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\bin\Debug\FirstNationalBankOfNPC.pdb
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FNBofNPC.csprojResolveAssemblyReference.cache
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.Form1.resources
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FirstNationalBankOfNPC.Properties.Resources.resources
+E:\Programming 1_C#\FirstNationalBankOfNPC\FirstNationalBankOfNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\FirstNationalBankOfNPC\FNBofNPC\bin\Debug\FirstNationalBankOfNPC.exe.config
+C:\Users\student\Desktop\FirstNationalBankOfNPC\FNBofNPC\obj\Debug\FirstNationalBankOfNPC.exe
+C:\Users\student\Desktop\FirstNationalBankOfNPC\FNBofNPC\obj\Debug\FirstNationalBankOfNPC.pdb
+C:\Users\student\Desktop\FNBofNPC\FNBofNPC\bin\Debug\FirstNationalBankOfNPC.exe.config
+C:\Users\student\Desktop\FNBofNPC\FNBofNPC\obj\Debug\FirstNationalBankOfNPC.exe
+C:\Users\student\Desktop\FNBofNPC\FNBofNPC\obj\Debug\FirstNationalBankOfNPC.pdb
