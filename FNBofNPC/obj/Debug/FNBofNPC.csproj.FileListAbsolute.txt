@@ -10,3 +10,6 @@ C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.Properties
 C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache
 C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.exe
 C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.pdb
+C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\bin\Debug\FNBofNPC.exe.config
+C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.exe
+C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.pdb
