@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FNBofNPC
 {
-    public partial class Form1 : Form
+    public partial class NewTransaction : Form
     {
-        public Form1()
+        public NewTransaction()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace FNBofNPC
 {
-    partial class Form1
+    partial class NewTransaction
     {
         /// <summary>
         /// Required designer variable.
