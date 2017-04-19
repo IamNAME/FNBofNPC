@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FNBofNPC
+namespace FNBOfNPC
 {
     public partial class MainForm : Form
     {
@@ -22,9 +22,16 @@ namespace FNBofNPC
             Close();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void btn1_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            NewCust frm = new NewCust();
+            frm.Show();
+        }
+
     }
 }

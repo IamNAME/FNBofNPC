@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FirstNationalBankOfNPC
 {
-    class Account: Form1
+    class Account
     {
         int _custID;            //customer ID
         int _accNum;            //account number

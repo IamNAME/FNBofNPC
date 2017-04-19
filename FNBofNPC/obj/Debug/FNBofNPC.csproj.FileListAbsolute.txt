@@ -13,3 +13,9 @@ C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.pdb
 C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\bin\Debug\FNBofNPC.exe.config
 C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.exe
 C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.pdb
+C:\Users\dwylie\Desktop\FNBofNPC-sechols\FNBofNPC\bin\Debug\FNBOfNPC.exe.config
+C:\Users\dwylie\Desktop\FNBofNPC-sechols\FNBofNPC\obj\Debug\FNBOfNPC.exe
+C:\Users\dwylie\Desktop\FNBofNPC-sechols\FNBofNPC\obj\Debug\FNBOfNPC.pdb
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe.config
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.exe
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.pdb

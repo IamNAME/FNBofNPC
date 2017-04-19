@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3815BB1C-F0FF-4646-BD3D-59009FF931CD}</ProjectGuid>
+    <ProjectGuid>{5AAD7926-F7EC-43F8-9C9E-56BE6671571E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FNBofNPC</RootNamespace>
-    <AssemblyName>FNBofNPC</AssemblyName>
+    <RootNamespace>FNBOfNPC</RootNamespace>
+    <AssemblyName>FNBOfNPC</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,9 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Account.cs" />
     <Compile Include="AppData.cs" />
     <Compile Include="AppDataTester.cs">
       <SubType>Form</SubType>
@@ -58,11 +56,11 @@
     </Compile>
     <Compile Include="Customer.cs" />
     <Compile Include="Deposit.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NewAccount.cs">
       <SubType>Form</SubType>
@@ -70,23 +68,17 @@
     <Compile Include="NewAccount.Designer.cs">
       <DependentUpon>NewAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="NewCust.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="NewCust.Designer.cs">
+      <DependentUpon>NewCust.cs</DependentUpon>
     </Compile>
     <Compile Include="NewCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewCustomer.Designer.cs">
       <DependentUpon>NewCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewTransaction.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewTransaction.Designer.cs">
-      <DependentUpon>NewTransaction.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,15 +91,14 @@
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewCust.resx">
+      <DependentUpon>NewCust.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewCustomer.resx">
       <DependentUpon>NewCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewTransaction.resx">
-      <DependentUpon>NewTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,8 +108,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -133,7 +124,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images.jpg" />
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc-connect-img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc-connect-img 002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc-connect-img 003.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
