@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 
 
-namespace FNBOfNPC
+namespace FNBofNPC
 {
     public partial class NewCust : Form
     {

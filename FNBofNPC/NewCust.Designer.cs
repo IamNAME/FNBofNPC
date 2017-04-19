@@ -1,4 +1,4 @@
-﻿namespace FNBOfNPC
+﻿namespace FNBofNPC
 {
     partial class NewCust
     {

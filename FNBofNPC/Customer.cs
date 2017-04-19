@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FNBOfNPC
+namespace FNBofNPC
 {
     class Customer
     {

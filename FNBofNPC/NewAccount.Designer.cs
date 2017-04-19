@@ -1,4 +1,4 @@
-﻿namespace FirstNationalBankOfNPC
+﻿namespace FNBofNPC
 {
     partial class Form1
     {

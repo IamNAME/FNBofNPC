@@ -124,16 +124,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\npc-connect-img.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\npc-connect-img 002.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\npc-connect-img 003.jpg" />
+    <Content Include="images.jpg" />
+    <Content Include="Resources\npc_connect_img_003.jpg" />
+    <Content Include="Resources\npc-connect-img 002.jpg" />
+    <Content Include="Resources\npc-connect-img.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

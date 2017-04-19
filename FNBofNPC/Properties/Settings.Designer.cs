@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FNBOfNPC.Properties
+namespace FNBofNPC.Properties
 {
 
 
