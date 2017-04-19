@@ -1,0 +1,13 @@
+E:\Programming 2\FNBOfNPC\FNBOfNPC\bin\Debug\FNBOfNPC.exe.config
+F:\Programming 2\FNBOfNPC\FNBOfNPC\bin\Debug\FNBOfNPC.exe.config
+F:\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\bin\Debug\FNBOfNPC.exe.config
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\bin\Debug\FNBOfNPC.exe.config
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\bin\Debug\FNBOfNPC.exe
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\bin\Debug\FNBOfNPC.pdb
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\obj\Debug\FNBOfNPC.csprojResolveAssemblyReference.cache
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\obj\Debug\FNBOfNPC.Form1.resources
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\obj\Debug\FNBOfNPC.Properties.Resources.resources
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\obj\Debug\FNBOfNPC.csproj.GenerateResource.Cache
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\obj\Debug\FNBOfNPC.exe
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\obj\Debug\FNBOfNPC.pdb
+C:\Users\Steven Joe\Desktop\Programming 2\FNBOfNPC - Steven Joe\FNBOfNPC\obj\Debug\FNBOfNPC.NewCust.resources

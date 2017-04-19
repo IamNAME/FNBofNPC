@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FNBofNPC.Properties {
+namespace FNBOfNPC.Properties {
     using System;
     
     
@@ -66,6 +66,36 @@ namespace FNBofNPC.Properties {
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc_connect_img {
+            get {
+                object obj = ResourceManager.GetObject("npc-connect-img", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc_connect_img_002 {
+            get {
+                object obj = ResourceManager.GetObject("npc-connect-img 002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc_connect_img_003 {
+            get {
+                object obj = ResourceManager.GetObject("npc-connect-img 003", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

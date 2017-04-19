@@ -8,13 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FNBofNPC
+namespace FNBOfNPC
 {
-    public partial class NewTransaction : Form
+    public partial class Form1 : Form
     {
-        public NewTransaction()
+        public Form1()
         {
             InitializeComponent();
         }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            NewCust frm = new NewCust();
+            frm.Show();
+        }
+
     }
 }
