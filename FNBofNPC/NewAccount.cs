@@ -11,11 +11,11 @@ using System.IO;
 
 namespace FNBofNPC
 {
-    public partial class Form1 : Form
+    public partial class frmNewAccount : Form
     {
         StreamWriter sw;
         List<Account> LISTACCOUNT = new List<Account>();
-        public Form1()
+        public frmNewAccount()
         {
             InitializeComponent();
         }

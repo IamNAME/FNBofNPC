@@ -36,9 +36,7 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -96,7 +94,7 @@
             this.btn2.TabIndex = 5;
             this.btn2.Text = "New Customer";
             this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.Click += new System.EventHandler(this.NewCustomer_Click);
             // 
             // btn3
             // 
@@ -108,6 +106,7 @@
             this.btn3.TabIndex = 6;
             this.btn3.Text = "New Account";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.NewAccount_Click);
             // 
             // btn4
             // 
@@ -117,19 +116,9 @@
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(196, 48);
             this.btn4.TabIndex = 7;
-            this.btn4.Text = "Withdraw";
+            this.btn4.Text = "New Transaction";
             this.btn4.UseVisualStyleBackColor = false;
-            // 
-            // btn5
-            // 
-            this.btn5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn5.Location = new System.Drawing.Point(77, 429);
-            this.btn5.Margin = new System.Windows.Forms.Padding(4);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(196, 48);
-            this.btn5.TabIndex = 8;
-            this.btn5.Text = "Deposit";
-            this.btn5.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.NewTransaction_Click);
             // 
             // btn7
             // 
@@ -143,18 +132,6 @@
             this.btn7.Text = "Transaction History";
             this.btn7.UseVisualStyleBackColor = false;
             // 
-            // btn6
-            // 
-            this.btn6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn6.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(77, 510);
-            this.btn6.Margin = new System.Windows.Forms.Padding(4);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(196, 48);
-            this.btn6.TabIndex = 11;
-            this.btn6.Text = "Transfer";
-            this.btn6.UseVisualStyleBackColor = false;
-            // 
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -166,7 +143,7 @@
             this.btn9.TabIndex = 12;
             this.btn9.Text = "Exit";
             this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.Click += new System.EventHandler(this.Close_Click);
             // 
             // pictureBox1
             // 
@@ -199,9 +176,7 @@
             this.ClientSize = new System.Drawing.Size(1111, 797);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn9);
-            this.Controls.Add(this.btn6);
             this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
@@ -230,9 +205,7 @@
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Label label2;
     }
