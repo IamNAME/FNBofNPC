@@ -7,64 +7,16 @@ using System.IO;
 
 namespace FNBofNPC
 {
-    abstract class AppData
+    class AppData
     {
-        string _appDirectory = @"C:\myfiles\FNBofNPC";
-        string _customerListName = "CData.txt";
-        string _accountListName = "AData.txt";
-        string _transactionListName = "TData.txt";
+        static string _appDirectory = @"C:\myfiles\FNBofNPC";
+        static string _customerListName = "CData.txt";
+        static string _accountListName = "AData.txt";
+        static string _transactionListName = "TData.txt";
 
-        public string _appDir
+        public static void saveToCustList(Customer cust)
         {
-            get
-            {
-                return _appDir;
-            }
-            set
-            {
-                _appDir = value;
-            }
-        }
-
-        public string _cListName
-        {
-            get
-            {
-                return _cListName;
-            }
-            set
-            {
-                _cListName = value;
-            }
-        }
-
-        public string _aListName
-        {
-            get
-            {
-                return _aListName;
-            }
-            set
-            {
-                _aListName = value;
-            }
-        }
-
-        public string _tListName
-        {
-            get
-            {
-                return _tListName;
-            }
-            set
-            {
-                _tListName = value;
-            }
-        }
-
-        void saveToCustList(Customer cust)
-        {
-                StreamWriter sw = new StreamWriter(_appDir + @"\" + _customerListName);
+                StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _customerListName, true);
 
 
                 sw.WriteLine(cust.CID + ","
@@ -96,6 +48,11 @@ namespace FNBofNPC
         }
 
         void saveToAccList(Account acc)
+        {
+            return;
+        }
+
+        void saveToTransList(Transaction trans)
         {
             return;
         }

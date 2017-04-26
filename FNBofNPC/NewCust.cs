@@ -23,6 +23,7 @@ namespace FNBofNPC
         {
 
             Customer cs = new Customer();
+            cs.CID = tbxCustID.Text;
             cs.FNAME = tbxFirstName.Text;
             cs.LNAME = tbxLastName.Text;
             cs.SSNUM = tbxSSNumber.Text;
@@ -68,7 +69,7 @@ namespace FNBofNPC
             //        + tbxCitizen.Text + ","
             //        + tbxMother.Text);
             //    sw.Close();
-
+            AppData.saveToCustList(cs);
             MessageBox.Show("Data Saved");
 
             {
