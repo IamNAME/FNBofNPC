@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstNationalBankOfNPC
+namespace FNBofNPC
 {
-    class Account: Form1
+    class Account
     {
         int _custID;            //customer ID
         int _accNum;            //account number

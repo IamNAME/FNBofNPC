@@ -46,12 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Account.cs" />
+    <Compile Include="AppData.cs" />
+    <Compile Include="AppDataTester.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AppDataTester.Designer.cs">
+      <DependentUpon>AppDataTester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Deposit.cs" />
+    <Compile Include="EmptyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmptyForm.Designer.cs">
+      <DependentUpon>EmptyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransaction.designer.cs">
+      <DependentUpon>frmTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAccount.Designer.cs">
+      <DependentUpon>NewAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="NewCust.cs">
       <SubType>Form</SubType>
@@ -61,8 +88,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Transaction.cs" />
+    <Compile Include="Transfer.cs" />
+    <Compile Include="Withdrawal.cs" />
+    <EmbeddedResource Include="AppDataTester.resx">
+      <DependentUpon>AppDataTester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmptyForm.resx">
+      <DependentUpon>EmptyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransaction.resx">
+      <DependentUpon>frmTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccount.resx">
+      <DependentUpon>NewAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewCust.resx">
       <DependentUpon>NewCust.cs</DependentUpon>
@@ -91,16 +136,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\npc-connect-img.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\npc-connect-img 002.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\npc-connect-img 003.jpg" />
+    <Content Include="images.jpg" />
+    <Content Include="Resources\npc_connect_img_003.jpg" />
+    <Content Include="Resources\npc-connect-img 002.jpg" />
+    <Content Include="Resources\npc-connect-img.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,62 +3,58 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace FNBofNPC
 {
-    abstract class AppData
+    class AppData
     {
-        string _appDirectory = @"C:\myfiles\FNBOfNPC";
-        string _customerListName = "CData.txt";
-        string _accountListName = "AData.txt";
-        string _transactionListName = "TData.txt";
+        static string _appDirectory = @"C:\myfiles\FNBofNPC";
+        static string _customerListName = "CData.txt";
+        static string _accountListName = "AData.txt";
+        static string _transactionListName = "TData.txt";
 
-        public string _appDir
+        public static void saveToCustList(Customer cust)
         {
-            get
-            {
-                return _appDir;
-            }
-            set
-            {
-                _appDir = value;
-            }
+                StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _customerListName, true);
+
+
+                sw.WriteLine(cust.CID + ","
+                    + cust.FNAME + ","
+                    + cust.LNAME + "," 
+                    + cust.SSNUM + ","
+                    + cust.DOB + ","
+                    + cust.ADD + ","
+                    + cust.CITY + ","
+                    + cust.STATE + ","
+                    + cust.ZIP + ","
+                    + cust.PHONE + ","
+                    + cust.ALTPHONE + ","
+                    + cust.EMAIL + ","
+                    + cust.EMP + ","
+                    + cust.DLNUMBER + ","
+                    + cust.DLCITY + ","
+                    + cust.DLSTATE + ","
+                    + cust.EXPDATE + ","
+                    + cust.CITI + ","
+                    + cust.MOTHER);
+                sw.Close();
+            return;
         }
 
-        public string _cListName
+        void loadLastCust()
         {
-            get
-            {
-                return _cListName;
-            }
-            set
-            {
-                _cListName = value;
-            }
+
         }
 
-        public string _aListName
+        void saveToAccList(Account acc)
         {
-            get
-            {
-                return _aListName;
-            }
-            set
-            {
-                _aListName = value;
-            }
+            return;
         }
 
-        public string _tListName
+        void saveToTransList(Transaction trans)
         {
-            get
-            {
-                return _tListName;
-            }
-            set
-            {
-                _tListName = value;
-            }
+            return;
         }
     }
 }

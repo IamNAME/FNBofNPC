@@ -16,15 +16,36 @@ namespace FNBofNPC
         {
             InitializeComponent();
         }
+        private void btn1_Click(object sender, EventArgs e)
+        {
 
-        private void btn9_Click(object sender, EventArgs e)
+        }
+        private void NewCustomer_Click(object sender, EventArgs e)
+        {
+            NewCust customerForm = new NewCust();
+            customerForm.Show();
+        }
+
+        private void NewTransaction_Click(object sender, EventArgs e)
+        {
+            frmTransaction transForm = new frmTransaction();
+            transForm.Show();
+        }
+
+        private void NewAccount_Click(object sender, EventArgs e)
+        {
+            frmNewAccount accountForm = new frmNewAccount();
+            accountForm.Show();
+        }
+
+        private void Close_Click(object sender, EventArgs e)
         {
             Close();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            // Author of design: Steven Joe Echols
         }
     }
 }

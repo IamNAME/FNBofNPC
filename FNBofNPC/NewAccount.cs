@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace FirstNationalBankOfNPC
+namespace FNBofNPC
 {
-    public partial class Form1 : Form
+    public partial class frmNewAccount : Form
     {
         StreamWriter sw;
         List<Account> LISTACCOUNT = new List<Account>();
-        public Form1()
+        public frmNewAccount()
         {
             InitializeComponent();
         }
         int accountNum;
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
             if (LISTACCOUNT.Count > 0)
             {
                 accountNum = LISTACCOUNT.Last().accNum + 1;
@@ -52,6 +52,26 @@ namespace FirstNationalBankOfNPC
 
             this.Close();
            
+
+        }
+
+        private void startBalance_tbx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void startBal_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accountType_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AccountNum_tbx_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
