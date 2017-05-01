@@ -10,9 +10,14 @@ namespace FNBofNPC
     class AppData
     {
         static string _appDirectory = @"C:\myfiles\FNBofNPC";
-        static string _customerListName = "CData.txt";
-        static string _accountListName = "AData.txt";
+        static string _customerListName = @"C:\myfiles\FNBofNPC\CData.txt";
+        static string _accountListName = @"C:\myfiles\FNBofNPC\AData.txt";
         static string _transactionListName = "TData.txt";
+        public static List<Account> AccountList = new List<Account>();
+        public static List<Customer> CustomerList = new List<Customer>();
+
+
+
 
         public static void saveToCustList(Customer cust)
         {

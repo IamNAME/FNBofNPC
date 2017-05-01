@@ -68,12 +68,13 @@
             this.label19 = new System.Windows.Forms.Label();
             this.tbxMother = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(770, 516);
+            this.btnSave.Location = new System.Drawing.Point(618, 544);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(137, 45);
             this.btnSave.TabIndex = 73;
@@ -442,14 +443,26 @@
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 76;
             this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(518, 31);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(147, 24);
+            this.label20.TabIndex = 77;
+            this.label20.Text = "New Customer";
             // 
             // NewCust
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 601);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(178)))), ((int)(((byte)(200)))));
+            this.ClientSize = new System.Drawing.Size(847, 642);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.tbxMother);
@@ -540,5 +553,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox tbxMother;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label20;
     }
 }

@@ -22,13 +22,7 @@ namespace FNBofNPC
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            //if (NewCust.Count > 0)
-            //{
-            //    accountNum = LISTACCOUNT.Last().accNum + 1;
-            //    AccountNum_tbx.Text = accountNum.ToString();
-            //}
-            //else
-            //    AccountNum_tbx.Text = "1";
+           
         }
 
 
@@ -56,7 +50,7 @@ namespace FNBofNPC
             cs.CITI = tbxCitizen.Text;
             cs.MOTHER = tbxMother.Text;
 
-
+            AppData.CustomerList.Add(cs);
 
             //    StreamWriter sw = new StreamWriter(@"C:\myfiles\mydata.txt");
             //    //FileStream fs = new FileStream(@"C:\myfiles\mydata.bin, 
