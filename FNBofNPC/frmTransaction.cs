@@ -94,5 +94,10 @@ namespace FNBofNPC
                 }
             }
         }
+
+        private void toAccountLbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

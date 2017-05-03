@@ -45,7 +45,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(432, 141);
+            this.textBox1.Location = new System.Drawing.Point(312, 141);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -56,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(464, 92);
+            this.label1.Location = new System.Drawing.Point(344, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 19);
@@ -66,7 +66,7 @@
             // btn1
             // 
             this.btn1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn1.Location = new System.Drawing.Point(821, 141);
+            this.btn1.Location = new System.Drawing.Point(650, 141);
             this.btn1.Margin = new System.Windows.Forms.Padding(4);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(148, 41);
@@ -81,7 +81,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(737, 501);
+            this.textBox2.Size = new System.Drawing.Size(510, 323);
             this.textBox2.TabIndex = 4;
             // 
             // btn2
@@ -123,11 +123,11 @@
             // btn7
             // 
             this.btn7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(77, 581);
+            this.btn7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.Location = new System.Drawing.Point(77, 435);
             this.btn7.Margin = new System.Windows.Forms.Padding(4);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(196, 58);
+            this.btn7.Size = new System.Drawing.Size(196, 48);
             this.btn7.TabIndex = 10;
             this.btn7.Text = "Transaction History";
             this.btn7.UseVisualStyleBackColor = false;
@@ -136,7 +136,7 @@
             // 
             this.btn9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn9.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(855, 715);
+            this.btn9.Location = new System.Drawing.Point(626, 582);
             this.btn9.Margin = new System.Windows.Forms.Padding(4);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(196, 48);
@@ -173,7 +173,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(178)))), ((int)(((byte)(200)))));
-            this.ClientSize = new System.Drawing.Size(1111, 797);
+            this.ClientSize = new System.Drawing.Size(934, 680);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn7);

@@ -8,7 +8,7 @@ namespace FNBofNPC
 {
     class Customer
     {
-        private string _cID; // Customer ID
+        int _cID; // Customer ID
 
         private string _fName; // First Name
         private string _lName; // Last Name
@@ -38,7 +38,7 @@ namespace FNBofNPC
         private string _mother; //Mother's Maiden Name
         private string _citi; // Citicenship
 
-        public string CID
+        int CID
         {
             get { return _cID; }
             set { _cID = value; }

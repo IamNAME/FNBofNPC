@@ -34,7 +34,7 @@ namespace FNBofNPC
 
         private void NewAccount_Click(object sender, EventArgs e)
         {
-            frmNewAccount accountForm = new frmNewAccount();
+            Form1 accountForm = new Form1();
             accountForm.Show();
         }
 

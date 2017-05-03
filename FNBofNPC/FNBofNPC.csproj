@@ -106,6 +106,9 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewAccount.resx">
+      <DependentUpon>NewAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewCust.resx">
       <DependentUpon>NewCust.cs</DependentUpon>
     </EmbeddedResource>
