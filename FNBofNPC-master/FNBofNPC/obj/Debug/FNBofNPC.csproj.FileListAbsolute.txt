@@ -44,3 +44,17 @@ C:\Users\student\Documents\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.Propertie
 C:\Users\student\Documents\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache
 C:\Users\student\Documents\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe
 C:\Users\student\Documents\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.pdb
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe.config
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.exe
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.pdb
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.pdb
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.csprojResolveAssemblyReference.cache
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.AppDataTester.resources
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.Customer.resources
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.NewTransaction.resources
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.frmTransaction.resources
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.MainForm.resources
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.NewCust.resources
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.Properties.Resources.resources
+E:\FNBofNPC-kwatson\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache

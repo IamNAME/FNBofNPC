@@ -23,7 +23,7 @@ namespace FNBofNPC
         {
 
             Customer cs = new Customer();
-            cs.CID = tbxCustID.Text;
+            cs.CID = Convert.ToInt32(tbxCustID.Text);
             cs.FNAME = tbxFirstName.Text;
             cs.LNAME = tbxLastName.Text;
             cs.SSNUM = tbxSSNumber.Text;
@@ -91,6 +91,10 @@ namespace FNBofNPC
         
     }
 
-       
+        private void NewCust_Load(object sender, EventArgs e)
+        {
+
+            tbxCustID.Text = Convert.ToString(AppData.CustomerList.Last().CID+1);
+        }
     }
 }

@@ -32,7 +32,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
@@ -40,7 +39,10 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.showAccounts = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -59,7 +61,7 @@
             this.label1.Location = new System.Drawing.Point(464, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 19);
+            this.label1.Size = new System.Drawing.Size(187, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Customer Look Up";
             // 
@@ -74,15 +76,6 @@
             this.btn1.Text = "Enter";
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(312, 203);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(737, 501);
-            this.textBox2.TabIndex = 4;
             // 
             // btn2
             // 
@@ -124,7 +117,7 @@
             // 
             this.btn7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(77, 581);
+            this.btn7.Location = new System.Drawing.Point(519, 676);
             this.btn7.Margin = new System.Windows.Forms.Padding(4);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(196, 58);
@@ -164,23 +157,47 @@
             this.label2.Location = new System.Drawing.Point(337, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(485, 32);
+            this.label2.Size = new System.Drawing.Size(591, 40);
             this.label2.TabIndex = 13;
             this.label2.Text = "First National Bank of National Park";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(334, 203);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(635, 456);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // showAccounts
+            // 
+            this.showAccounts.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.showAccounts.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showAccounts.Location = new System.Drawing.Point(287, 676);
+            this.showAccounts.Margin = new System.Windows.Forms.Padding(4);
+            this.showAccounts.Name = "showAccounts";
+            this.showAccounts.Size = new System.Drawing.Size(196, 58);
+            this.showAccounts.TabIndex = 15;
+            this.showAccounts.Text = "Show Accounts";
+            this.showAccounts.UseVisualStyleBackColor = false;
+            this.showAccounts.Click += new System.EventHandler(this.showAccounts_Click);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(178)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(1111, 797);
+            this.Controls.Add(this.showAccounts);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -189,7 +206,9 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MainForm";
             this.Text = "FNBofNP";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,13 +220,14 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button showAccounts;
     }
 }
 

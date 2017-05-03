@@ -16,6 +16,12 @@ namespace FNBofNPC
         {
             InitializeComponent();
         }
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            AppData.loadCustList();
+            //clear data grid here
+            dataGridView1.DataSource = AppData.CustomerList;
+        }
         private void btn1_Click(object sender, EventArgs e)
         {
 
@@ -41,6 +47,14 @@ namespace FNBofNPC
         private void Close_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void showAccounts_Click(object sender, EventArgs e)
+        {
+            //clear data grid here
+            AppData.loadAccountList();
+            dataGridView1.DataSource = AppData.AccountList;
+
         }
     }
 }
