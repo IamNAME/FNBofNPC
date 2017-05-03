@@ -45,3 +45,9 @@ C:\Users\Steven Joe\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.NewCust.
 C:\Users\Steven Joe\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.Properties.Resources.resources
 C:\Users\Steven Joe\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache
 C:\Users\Steven Joe\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.frmNewAccount.resources
+C:\Users\Steven Joe\Desktop\FNBofNP\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe.config
+C:\Users\Steven Joe\Desktop\FNBofNP\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.exe
+C:\Users\Steven Joe\Desktop\FNBofNP\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.pdb
+E:\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe.config
+E:\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.exe
+E:\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.pdb
