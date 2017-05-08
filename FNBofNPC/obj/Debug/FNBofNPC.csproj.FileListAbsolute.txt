@@ -10,3 +10,37 @@ C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.Properties
 C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache
 C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.exe
 C:\Users\dwylie\Desktop\FNBofNPC\FNBofNPC\FNBofNPC\obj\Debug\FNBofNPC.pdb
+C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\bin\Debug\FNBofNPC.exe.config
+C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.exe
+C:\Users\dwylie\Desktop\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.pdb
+C:\Users\dwylie\Desktop\FNBofNPC-sechols\FNBofNPC\bin\Debug\FNBOfNPC.exe.config
+C:\Users\dwylie\Desktop\FNBofNPC-sechols\FNBofNPC\obj\Debug\FNBOfNPC.exe
+C:\Users\dwylie\Desktop\FNBofNPC-sechols\FNBofNPC\obj\Debug\FNBOfNPC.pdb
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe.config
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.exe
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.pdb
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.csprojResolveAssemblyReference.cache
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.AppDataTester.resources
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.Customer.resources
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.NewTransaction.resources
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.frmTransaction.resources
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.MainForm.resources
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.NewCust.resources
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.Properties.Resources.resources
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe
+C:\Users\dwylie\Desktop\Master Branch\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.pdb
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe.config
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.exe
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.pdb
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.exe
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\bin\Debug\FNBOfNPC.pdb
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.csprojResolveAssemblyReference.cache
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.AppDataTester.resources
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.Customer.resources
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.NewTransaction.resources
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.frmTransaction.resources
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.MainForm.resources
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.NewCust.resources
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBOfNPC.Properties.Resources.resources
+C:\Users\IamNAME\Desktop\NPC Stuff\Programming II\FNBofNPC-master\FNBofNPC\obj\Debug\FNBofNPC.csproj.GenerateResource.Cache

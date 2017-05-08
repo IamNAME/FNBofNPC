@@ -3,62 +3,98 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace FNBofNPC
 {
-    abstract class AppData
+    class AppData
     {
-        string _appDirectory = @"C:\myfiles\FNBOfNPC";
-        string _customerListName = "CData.txt";
-        string _accountListName = "AData.txt";
-        string _transactionListName = "TData.txt";
+        static string _appDirectory = @"C:\myfiles\FNBofNPC";
+        static string _customerListName = "CData.txt";
+        static string _accountListName = "AData.txt";
+        static string _transactionListName = "TData.txt";
 
-        public string _appDir
+        public static void generateSampleData(int samples)//generates a number of samples for all three lists
         {
-            get
+            StreamWriter sw1 = new StreamWriter(_appDirectory + @"\" + _customerListName, true);
+            StreamWriter sw2 = new StreamWriter(_appDirectory + @"\" + _accountListName, true);
+            StreamWriter sw3 = new StreamWriter(_appDirectory + @"\" + _transactionListName, true);
+
+            for (int i = 0; i < samples; i++)
             {
-                return _appDir;
+                
+                sw1.WriteLine(i 
+                    + ",Jim" + i 
+                    + ",Person" + i 
+                    + ",123-45-6789,01-01-1991," + i + " Road Street,Cityville,AR,12345,123-456-7890,098-765-4321,sample@sample.com,Bossman,12345123,Cityville,AR,01/2019,USA,Mom");
+                sw2.WriteLine(i + ","
+                    + "Checking" + ","
+                    + i + ","
+                    + "10000");
+                sw3.WriteLine(i +","
+                    + 100 + ","
+                    + i+1);
+                
             }
-            set
-            {
-                _appDir = value;
-            }
+            sw1.Close();
+            sw2.Close();
+            sw3.Close();
         }
 
-        public string _cListName
+        public static void saveToCustList(Customer cust)//writes customer list to directory defined in AppData
         {
-            get
-            {
-                return _cListName;
-            }
-            set
-            {
-                _cListName = value;
-            }
+                StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _customerListName, true);
+
+
+                sw.WriteLine(cust.CID + ","
+                    + cust.FNAME + ","
+                    + cust.LNAME + "," 
+                    + cust.SSNUM + ","
+                    + cust.DOB + ","
+                    + cust.ADD + ","
+                    + cust.CITY + ","
+                    + cust.STATE + ","
+                    + cust.ZIP + ","
+                    + cust.PHONE + ","
+                    + cust.ALTPHONE + ","
+                    + cust.EMAIL + ","
+                    + cust.EMP + ","
+                    + cust.DLNUMBER + ","
+                    + cust.DLCITY + ","
+                    + cust.DLSTATE + ","
+                    + cust.EXPDATE + ","
+                    + cust.CITI + ","
+                    + cust.MOTHER);
+                sw.Close();
+            return;
         }
 
-        public string _aListName
+        Customer loadLastCust()//grabs info from last customer
         {
-            get
-            {
-                return _aListName;
-            }
-            set
-            {
-                _aListName = value;
-            }
+            Customer placeholder = new Customer();
+            placeholder.CID = "1";
+            return placeholder;
         }
 
-        public string _tListName
+        void saveToAccList(Account acc)
         {
-            get
-            {
-                return _tListName;
-            }
-            set
-            {
-                _tListName = value;
-            }
+            StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _accountListName, true);
+            sw.WriteLine(acc.accNum + ","
+                + acc.accType + ","
+                + acc.custID + ","
+                + acc.openBal);
+            sw.Close();
+            return;
+        }
+
+        void saveToTransList(Transaction trans)
+        {
+            StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _transactionListName, true);
+            sw.WriteLine(trans.fromAccountNumber + ","
+                + trans.amount + ","
+                + trans.toAccountNumber);
+            sw.Close();
+            return;
         }
     }
 }
