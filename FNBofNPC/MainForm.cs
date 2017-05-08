@@ -48,5 +48,10 @@ namespace FNBofNPC
             AppData.generateSampleData(10);
             MessageBox.Show("Sample data populated.");
         }
+
+        private void dataRefresh_Click(object sender, EventArgs e)
+        {
+            AppData.readLists();
+        }
     }
 }

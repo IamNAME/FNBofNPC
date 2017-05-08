@@ -41,6 +41,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.genSample = new System.Windows.Forms.Button();
+            this.dataRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -179,12 +180,23 @@
             this.genSample.UseVisualStyleBackColor = true;
             this.genSample.Click += new System.EventHandler(this.genSample_Click);
             // 
+            // dataRefresh
+            // 
+            this.dataRefresh.Location = new System.Drawing.Point(77, 472);
+            this.dataRefresh.Name = "dataRefresh";
+            this.dataRefresh.Size = new System.Drawing.Size(196, 48);
+            this.dataRefresh.TabIndex = 15;
+            this.dataRefresh.Text = "Refresh Data Lists";
+            this.dataRefresh.UseVisualStyleBackColor = true;
+            this.dataRefresh.Click += new System.EventHandler(this.dataRefresh_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(178)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(1111, 797);
+            this.Controls.Add(this.dataRefresh);
             this.Controls.Add(this.genSample);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn9);
@@ -221,6 +233,7 @@
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button genSample;
+        private System.Windows.Forms.Button dataRefresh;
     }
 }
 
