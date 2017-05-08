@@ -58,7 +58,7 @@ namespace FNBofNPC
                 try
                 {
                     Deposit deposit = new Deposit(Convert.ToInt32(toAccountTbx.Text), Convert.ToDecimal(amtTbx.Text));
-                    //AppData.depositCollect(deposit);
+                    AppData.saveToTransList(deposit);
                     //need to make a utility to clear fields
                 }
                 catch
@@ -72,7 +72,7 @@ namespace FNBofNPC
                 try
                 {
                     Withdrawal withdrawal = new Withdrawal(Convert.ToDecimal(amtTbx.Text), Convert.ToInt32(fromAccountTbx.Text));
-                    //AppData.withdrawalCollect(withdrawal);
+                    AppData.saveToTransList(withdrawal);
                     //need to make a utility to clear fields
                 }
                 catch
@@ -85,7 +85,7 @@ namespace FNBofNPC
                 try
                 {
                     Transfer transfer = new Transfer(Convert.ToInt32(toAccountTbx.Text), Convert.ToDecimal(amtTbx.Text), Convert.ToInt32(fromAccountTbx.Text));
-                    //AppData.transferCollect(transfer);
+                    AppData.saveToTransList(transfer);
                     //need to make a utility to clear fields
                 }
                 catch

@@ -40,6 +40,7 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.genSample = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,12 +169,23 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "First National Bank of National Park";
             // 
+            // genSample
+            // 
+            this.genSample.Location = new System.Drawing.Point(77, 526);
+            this.genSample.Name = "genSample";
+            this.genSample.Size = new System.Drawing.Size(196, 48);
+            this.genSample.TabIndex = 14;
+            this.genSample.Text = "Sample Data (10)";
+            this.genSample.UseVisualStyleBackColor = true;
+            this.genSample.Click += new System.EventHandler(this.genSample_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(178)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(1111, 797);
+            this.Controls.Add(this.genSample);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn7);
@@ -208,6 +220,7 @@
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button genSample;
     }
 }
 

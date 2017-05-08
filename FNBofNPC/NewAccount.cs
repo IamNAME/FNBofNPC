@@ -34,16 +34,15 @@ namespace FNBofNPC
 
         private void saveAndExit_btn_Click(object sender, EventArgs e)
         {
+            
 
-            sw = new StreamWriter(@"C:\myfiles\theAccounts.txt");
-
-
+            //sw = new StreamWriter(@"C:\myfiles\theAccounts.txt");
             Account act = new Account();
             LISTACCOUNT.Add(act);
             act.custID = (Convert.ToInt32(CustomerID_tbx.Text));
             act.accType = savingsOrChecking_cbx.Text;
             act.openBal = Convert.ToDouble(startBalance_tbx.Text);
-            
+            AppData.saveToAccList(act);
 
            
            

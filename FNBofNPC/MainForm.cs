@@ -42,5 +42,11 @@ namespace FNBofNPC
         {
             Close();
         }
+
+        private void genSample_Click(object sender, EventArgs e)
+        {
+            AppData.generateSampleData(10);
+            MessageBox.Show("Sample data populated.");
+        }
     }
 }
