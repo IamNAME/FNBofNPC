@@ -156,6 +156,11 @@ namespace FNBofNPC
         {
             return _custList.Last();
         }
+        public static List<Customer> getCustList()
+            //gets customer list
+        {
+            return _custList;
+        }
 
         public static void saveToAccList(Account acc)
             //adds an account to internal list
@@ -206,6 +211,11 @@ namespace FNBofNPC
                     break;
             }
         }
+        public static List<Account> getAccList()
+            //gets account list
+        {
+            return _accList;
+        }
 
         public static void saveToTransList(Transaction trans)
             //adds a transaction to internal list
@@ -217,6 +227,11 @@ namespace FNBofNPC
             //grabs info from last transaction in internal list
         {
             return _transList.Last();
+        }
+        public static List<Transaction> getTransList()
+            //gets transaction list
+        {
+            return _transList;
         }
 
         public static void saveLists()
