@@ -9,7 +9,7 @@ namespace FNBofNPC
     class Transaction
     {
        public int fromAccountNumber; 
-       public decimal amount;
+       public double amount;
        public int toAccountNumber; 
 
        

@@ -8,7 +8,7 @@ namespace FNBofNPC
 {
     class Withdrawal : Transaction
     {
-        public Withdrawal(decimal amt, int fromAccount)
+        public Withdrawal(double amt, int fromAccount)
         {
             amount = amt;
             fromAccountNumber = fromAccount;
@@ -18,7 +18,7 @@ namespace FNBofNPC
             set { fromAccountNumber = value; }
             get { return fromAccountNumber; }
         }
-       private decimal Amount
+       private double Amount
         {
             set { amount = value; }
             get { return amount; }

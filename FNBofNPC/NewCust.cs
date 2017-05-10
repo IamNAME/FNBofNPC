@@ -43,41 +43,12 @@ namespace FNBofNPC
             cs.CITI = tbxCitizen.Text;
             cs.MOTHER = tbxMother.Text;
 
-            //    StreamWriter sw = new StreamWriter(@"C:\myfiles\mydata.txt");
-            //    //FileStream fs = new FileStream(@"C:\myfiles\mydata.bin, 
-            //    //    FileMode.CreatNew");
-            //    //StreamWriter sw = new StreamWriter(fs);
-
-
-            //    sw.WriteLine(tbxCustID.Text + "," +
-            //       cs._fname tbxFirstName.Text + ","
-            //        + tbxLastName.Text + "," 
-            //        + tbxSSNumber.Text + ","
-            //        + tbxDOB.Text + ","
-            //        + tbxAddress.Text + ","
-            //        + tbxCity.Text + ","
-            //        + comboBox1.Text + ","
-            //        + tbxZip.Text + ","
-            //        + tbxPhone.Text + ","
-            //        + tbxAltPhone.Text + ","
-            //        + tbxEmail.Text + ","
-            //        + tbxEmployer.Text + ","
-            //        + tbxDL.Text + ","
-            //        + tbxDLCity.Text + ","
-            //        + comboBox2.Text + ","
-            //        + tbxEXP.Text + ","
-            //        + tbxCitizen.Text + ","
-            //        + tbxMother.Text);
-            //    sw.Close();
             AppData.saveToCustList(cs);
             MessageBox.Show("Data Saved");
 
             {
                 Close();
             }
-                //appdata.collect(cs)
-                
-            //}
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -91,6 +62,9 @@ namespace FNBofNPC
         
     }
 
-       
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

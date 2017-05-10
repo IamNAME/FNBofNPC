@@ -15,6 +15,7 @@ namespace FNBofNPC
         public MainForm()
         {
             InitializeComponent();
+            AppData.readLists();
         }
         private void btn1_Click(object sender, EventArgs e)
         {
@@ -40,6 +41,7 @@ namespace FNBofNPC
 
         private void Close_Click(object sender, EventArgs e)
         {
+            AppData.saveLists();
             Close();
         }
 
@@ -52,6 +54,11 @@ namespace FNBofNPC
         private void dataRefresh_Click(object sender, EventArgs e)
         {
             AppData.readLists();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

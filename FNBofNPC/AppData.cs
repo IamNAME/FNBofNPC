@@ -10,9 +10,9 @@ namespace FNBofNPC
     class AppData
     {
         static string _appDirectory = @"C:\myfiles\FNBofNPC";
-        static string _customerListName = "CData.txt";
-        static string _accountListName = "AData.txt";
-        static string _transactionListName = "TData.txt";
+        static string _customerFileName = "CData.txt";
+        static string _accountFileName = "AData.txt";
+        static string _transactionFileName = "TData.txt";
 
         static List<Customer> _custList = new List<Customer>();
         static List<Account> _accList = new List<Account>();
@@ -21,10 +21,24 @@ namespace FNBofNPC
 
 
         public static void readLists()
+            //reads storage files into internal lists
         {
-            StreamReader sr1 = new StreamReader(_appDirectory + @"\" + _customerListName);
-            StreamReader sr2 = new StreamReader(_appDirectory + @"\" + _accountListName);
-            StreamReader sr3 = new StreamReader(_appDirectory + @"\" + _transactionListName);
+            if(!File.Exists(_appDirectory + @"\" + _customerFileName))
+            {
+                File.Create(_appDirectory + @"\" + _customerFileName);
+            }
+            if(!File.Exists(_appDirectory + @"\" + _accountFileName))
+            {
+                File.Create(_appDirectory + @"\" + _accountFileName);
+            }
+            if(!File.Exists(_appDirectory + @"\" + _transactionFileName))
+            {
+                File.Create(_appDirectory + @"\" + _transactionFileName);
+            }
+
+            StreamReader sr1 = new StreamReader(_appDirectory + @"\" + _customerFileName);
+            StreamReader sr2 = new StreamReader(_appDirectory + @"\" + _accountFileName);
+            StreamReader sr3 = new StreamReader(_appDirectory + @"\" + _transactionFileName);
 
             Customer importCust = new Customer();
             Account importAcc = new Account();
@@ -96,14 +110,18 @@ namespace FNBofNPC
                         break;
                 }
             }
+            sr1.Close();
+            sr2.Close();
+            sr3.Close();
 
         }
 
-        public static void generateSampleData(int samples)//generates a number of samples for all three lists
+        public static void generateSampleData(int samples)
+            //generates a number of samples for all three lists
         {
-            StreamWriter sw1 = new StreamWriter(_appDirectory + @"\" + _customerListName, true);
-            StreamWriter sw2 = new StreamWriter(_appDirectory + @"\" + _accountListName, true);
-            StreamWriter sw3 = new StreamWriter(_appDirectory + @"\" + _transactionListName, true);
+            StreamWriter sw1 = new StreamWriter(_appDirectory + @"\" + _customerFileName, true);
+            StreamWriter sw2 = new StreamWriter(_appDirectory + @"\" + _accountFileName, true);
+            StreamWriter sw3 = new StreamWriter(_appDirectory + @"\" + _transactionFileName, true);
 
             for (int i = 0; i <= samples; i++)
             {
@@ -127,79 +145,142 @@ namespace FNBofNPC
             sw3.Close();
         }
 
-        public static void saveToCustList(Customer cust)//writes customer list to directory defined in AppData
+        public static void saveToCustList(Customer cust)
+            //adds a customer to internal list
         {
-                StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _customerListName, true);
-
-
-                sw.WriteLine(cust.CID + ","
-                    + cust.FNAME + ","
-                    + cust.LNAME + "," 
-                    + cust.SSNUM + ","
-                    + cust.DOB + ","
-                    + cust.ADD + ","
-                    + cust.CITY + ","
-                    + cust.STATE + ","
-                    + cust.ZIP + ","
-                    + cust.PHONE + ","
-                    + cust.ALTPHONE + ","
-                    + cust.EMAIL + ","
-                    + cust.EMP + ","
-                    + cust.DLNUMBER + ","
-                    + cust.DLCITY + ","
-                    + cust.DLSTATE + ","
-                    + cust.DLZIP + ","
-                    + cust.EXPDATE + ","
-                    + cust.CITI + ","
-                    + cust.MOTHER);
-                sw.Close();
+            _custList.Add(cust);
             return;
         }
-
-        public static Customer loadLastCust()//grabs info from last customer
+        public static Customer lastCust()
+            //grabs info from last customer in internal list
         {
-            Customer placeholder = new Customer();
-            placeholder.CID = "1";
-            return placeholder;
+            return _custList.Last();
         }
 
         public static void saveToAccList(Account acc)
+            //adds an account to internal list
         {
-            StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _accountListName, true);
-            sw.WriteLine(acc.accNum + ","
+            _accList.Add(acc);
+            return;
+        }
+        public static Account lastAcc()
+            //grabs info from last account in internal list
+        {
+            return _accList.Last();
+        }
+        public static void performTransaction(Transaction trans)
+            //performs given transaction
+        {
+            switch (trans.GetType().ToString())
+            {
+                case "FNBofNPC.Withdrawal":
+                    foreach (Account acc in _accList)
+                    {
+                        if (acc.accNum == trans.fromAccountNumber)
+                        {
+                            acc.openBal -= trans.amount;
+                        }
+                    }
+                    break;
+                case "FNBofNPC.Transfer":
+                    foreach (Account acc in _accList)
+                    {
+                        if (acc.accNum == trans.fromAccountNumber)
+                        {
+                            acc.openBal -= trans.amount;
+                        }
+                        if (acc.accNum == trans.toAccountNumber)
+                        {
+                            acc.openBal += trans.amount;
+                        }
+                    }
+                    break;
+                case "FNBofNPC.Deposit":
+                    foreach (Account acc in _accList)
+                    {
+                        if (acc.accNum == trans.toAccountNumber)
+                        {
+                            acc.openBal += trans.amount;
+                        }
+                    }
+                    break;
+            }
+        }
+
+        public static void saveToTransList(Transaction trans)
+            //adds a transaction to internal list
+        {
+            _transList.Add(trans);
+            return;
+        }
+        public static Transaction lastTrans()
+            //grabs info from last transaction in internal list
+        {
+            return _transList.Last();
+        }
+
+        public static void saveLists()
+            //writes internal lists to storage files (!!DO NOT USE BEFORE readLists!!)
+        {
+            StreamWriter sw1 = new StreamWriter(_appDirectory + @"\" + _customerFileName, false);
+            StreamWriter sw2 = new StreamWriter(_appDirectory + @"\" + _accountFileName, false);
+            StreamWriter sw3 = new StreamWriter(_appDirectory + @"\" + _transactionFileName, false);
+
+            foreach(Customer cust in _custList)
+            {
+                sw1.WriteLine(cust.CID + ","
+                   + cust.FNAME + ","
+                   + cust.LNAME + ","
+                   + cust.SSNUM + ","
+                   + cust.DOB + ","
+                   + cust.ADD + ","
+                   + cust.CITY + ","
+                   + cust.STATE + ","
+                   + cust.ZIP + ","
+                   + cust.PHONE + ","
+                   + cust.ALTPHONE + ","
+                   + cust.EMAIL + ","
+                   + cust.EMP + ","
+                   + cust.DLNUMBER + ","
+                   + cust.DLCITY + ","
+                   + cust.DLSTATE + ","
+                   + cust.DLZIP + ","
+                   + cust.EXPDATE + ","
+                   + cust.CITI + ","
+                   + cust.MOTHER);
+            }
+            sw1.Close();
+            foreach(Account acc in _accList)
+            {
+                sw2.WriteLine(acc.accNum + ","
                 + acc.accType + ","
                 + acc.custID + ","
                 + acc.openBal);
-            sw.Close();
-            return;
-        }
-
-        public static void saveToTransList(Withdrawal trans)
-        {
-            StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _transactionListName, true);
-            sw.WriteLine(trans.fromAccountNumber + ","
+            }
+            sw2.Close();
+            foreach(Transaction trans in _transList)
+            {
+                switch (trans.GetType().ToString())
+                {
+                    case "Withdrawal":
+                        sw3.WriteLine(trans.fromAccountNumber + ","
                 + trans.amount + ","
                 + "" + ",Withdrawal");
-            sw.Close();
-            return;
-        }
-        public static void saveToTransList(Transfer trans)
-        {
-            StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _transactionListName, true);
-            sw.WriteLine(trans.fromAccountNumber + ","
+                        break;
+                    case "Transfer":
+                        sw3.WriteLine(trans.fromAccountNumber + ","
                 + trans.amount + ","
                 + trans.toAccountNumber + ",Transfer");
-            sw.Close();
-            return;
-        }
-        public static void saveToTransList(Deposit trans)
-        {
-            StreamWriter sw = new StreamWriter(_appDirectory + @"\" + _transactionListName, true);
-            sw.WriteLine("" + ","
+                        break;
+                    case "Deposit":
+                        sw3.WriteLine("" + ","
                 + trans.amount + ","
                 + trans.toAccountNumber + ",Deposit");
-            sw.Close();
-            return;
+                        break;
+                }
+            }
+            sw3.Close();
         }
+
     }
 }

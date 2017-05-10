@@ -13,42 +13,29 @@ namespace FNBofNPC
 {
     public partial class frmNewAccount : Form
     {
-        StreamWriter sw;
         List<Account> LISTACCOUNT = new List<Account>();
         public frmNewAccount()
         {
             InitializeComponent();
         }
-        int accountNum;
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            if (LISTACCOUNT.Count > 0)
-            {
-                accountNum = LISTACCOUNT.Last().accNum + 1;
-                AccountNum_tbx.Text = accountNum.ToString();
-            }
-            else
-                AccountNum_tbx.Text = "1";
+            AccountNum_tbx.Text = Convert.ToString(AppData.lastAcc().accNum + 1);
         }
 
         private void saveAndExit_btn_Click(object sender, EventArgs e)
         {
-            
-
-            //sw = new StreamWriter(@"C:\myfiles\theAccounts.txt");
             Account act = new Account();
-            LISTACCOUNT.Add(act);
+            
             act.custID = (Convert.ToInt32(CustomerID_tbx.Text));
             act.accType = savingsOrChecking_cbx.Text;
             act.openBal = Convert.ToDouble(startBalance_tbx.Text);
             AppData.saveToAccList(act);
-
-           
-           
-
+            
             MessageBox.Show("The information has been stored.");
 
+            AppData.saveLists();
             this.Close();
            
 
