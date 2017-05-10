@@ -57,42 +57,55 @@ namespace FNBofNPC
             {
                 try
                 {
-                    Deposit deposit = new Deposit(Convert.ToInt32(toAccountTbx.Text), Convert.ToDecimal(amtTbx.Text));
-                    //AppData.depositCollect(deposit);
-                    //need to make a utility to clear fields
+                    Deposit deposit = new Deposit(Convert.ToInt32(toAccountTbx.Text), Convert.ToDouble(amtTbx.Text));
+                    AppData.performTransaction(deposit);
+                    AppData.saveToTransList(deposit);
+                    AppData.saveLists();
+                    Close();
                 }
                 catch
                 {
-                    MessageBox.Show("Please be sure all fields have been filled out.");
+                    MessageBox.Show("Please be sure all fields have been filled out, and that all account numbers are valid.");
                 }
-
+                
             }
             else if (transactionTypeCmBx.Text == "Withdrawal")
             {
                 try
                 {
-                    Withdrawal withdrawal = new Withdrawal(Convert.ToDecimal(amtTbx.Text), Convert.ToInt32(fromAccountTbx.Text));
-                    //AppData.withdrawalCollect(withdrawal);
-                    //need to make a utility to clear fields
+                    Withdrawal withdrawal = new Withdrawal(Convert.ToDouble(amtTbx.Text), Convert.ToInt32(fromAccountTbx.Text));
+                    AppData.performTransaction(withdrawal);
+                    AppData.saveToTransList(withdrawal);
+                    AppData.saveLists();
+                    Close();
                 }
                 catch
                 {
-                    MessageBox.Show("Please be sure all fields have been filled out.");
+                    MessageBox.Show("Please be sure all fields have been filled out, and that all account numbers are valid.");
                 }
+                
             }
             else if (transactionTypeCmBx.Text == "Transfer")
             {
                 try
                 {
-                    Transfer transfer = new Transfer(Convert.ToInt32(toAccountTbx.Text), Convert.ToDecimal(amtTbx.Text), Convert.ToInt32(fromAccountTbx.Text));
-                    //AppData.transferCollect(transfer);
-                    //need to make a utility to clear fields
+                    Transfer transfer = new Transfer(Convert.ToInt32(toAccountTbx.Text), Convert.ToDouble(amtTbx.Text), Convert.ToInt32(fromAccountTbx.Text));
+                    AppData.performTransaction(transfer);
+                    AppData.saveToTransList(transfer);
+                    AppData.saveLists();
+                    Close();
                 }
                 catch
                 {
-                    MessageBox.Show("Please be sure all fields have been filled out.");
+                    MessageBox.Show("Please be sure all fields have been filled out, and that all account numbers are valid.");
                 }
+
             }
+        }
+
+        private void frmTransaction_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void toAccountLbl_Click(object sender, EventArgs e)

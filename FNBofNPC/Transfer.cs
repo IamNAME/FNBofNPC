@@ -8,7 +8,7 @@ namespace FNBofNPC
 {
     class Transfer : Transaction
     {
-        public Transfer (int toAccount, decimal amt, int fromAccount)
+        public Transfer (int toAccount, double amt, int fromAccount)
         {
             toAccountNumber = toAccount;
             amount = amt;
@@ -19,7 +19,7 @@ namespace FNBofNPC
             set { fromAccountNumber = value; }
             get { return fromAccountNumber; }
         }
-        decimal Amount
+        double Amount
         {
             set { amount = value; }
             get { return amount; }

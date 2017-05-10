@@ -15,6 +15,7 @@ namespace FNBofNPC
         public MainForm()
         {
             InitializeComponent();
+            
         }
         private void btn1_Click(object sender, EventArgs e)
         {
@@ -40,12 +41,29 @@ namespace FNBofNPC
 
         private void Close_Click(object sender, EventArgs e)
         {
+            AppData.saveLists();
             Close();
+        }
+
+        private void genSample_Click(object sender, EventArgs e)
+        {
+            AppData.generateSampleData(10);
+            MessageBox.Show("Sample data populated.");
+        }
+
+        private void dataRefresh_Click(object sender, EventArgs e)
+        {
+            AppData.readLists();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // Author of design: Steven Joe Echols
+            AppData.readLists();
         }
     }
 }

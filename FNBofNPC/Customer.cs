@@ -8,7 +8,7 @@ namespace FNBofNPC
 {
     class Customer
     {
-        int _cID; // Customer ID
+        private int _cID; // Customer ID
 
         private string _fName; // First Name
         private string _lName; // Last Name
